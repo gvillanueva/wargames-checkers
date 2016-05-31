@@ -52,7 +52,9 @@ module.exports = {
             bounds: {
                 x: 0, y: 0,
                 w: GRID_SIZE_SCALED * GRID_COLS,
-                h: GRID_SIZE_SCALED * GRID_ROWS },
+                h: GRID_SIZE_SCALED * GRID_ROWS
+            },
+            background: ":/images/board.bmp",
             units: units
         };
     }
