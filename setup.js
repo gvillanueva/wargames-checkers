@@ -32,9 +32,9 @@ module.exports = {
         for (var r = 0; r < 3; r++)
             for (var m = 0; m < 4; m++)
                 units[4 * r + m] = new Man(
-                    m * 2 * GRID_SIZE_SCALED + r % 2 * GRID_SIZE_SCALED,
+                    m * 2 * GRID_SIZE_SCALED + (r + 1) % 2 * GRID_SIZE_SCALED,
                     r * GRID_SIZE_SCALED,
-                    0,
+                    0, 1,
                     ":/checkers/images/wMan.bmp"
                 );
 
@@ -42,9 +42,9 @@ module.exports = {
         for (var r = 5; r < 8; r++)
             for (var m = 0; m < 4; m++)
                 units[4 * r + m] = new Man(
-                    m * 2 * GRID_SIZE_SCALED + r % 2 * GRID_SIZE_SCALED,
+                    m * 2 * GRID_SIZE_SCALED + (r + 1) % 2 * GRID_SIZE_SCALED,
                     r * GRID_SIZE_SCALED,
-                    0,
+                    0, -1,
                     ":/checkers/images/bMan.bmp"
                 );
 
